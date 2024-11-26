@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieReviewResult">
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="65dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="325dp"
+        android:background="@drawable/button_color_shape"
+        android:text="🏠"
+        app:layout_constraintBottom_toTopOf="@+id/qRecommendMsgText"
+        app:layout_constraintStart_toStartOf="@+id/p3MsgText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/aMovieNameText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/qGenreMsgText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qMovieNameText" />
+
+    <TextView
+        android:id="@+id/qRatingMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="83dp"
+        android:text="Rating(1-10)"
+        app:layout_constraintBottom_toTopOf="@+id/qThemeMovText"
+        app:layout_constraintEnd_toStartOf="@+id/aRatingBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qGenreMsgText" />
+
+    <TextView
+        android:id="@+id/qThemeMovText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What themes or messages did you find in the movie?"
+        app:layout_constraintBottom_toTopOf="@+id/aThemeMovText"
+        app:layout_constraintStart_toStartOf="@+id/aThemeMovText"
+        app:layout_constraintTop_toBottomOf="@+id/qRatingMsgText" />
+
+    <TextView
+        android:id="@+id/qMovieNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:text="Movie Name:"
+        app:layout_constraintBottom_toTopOf="@+id/aMovieNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p3MsgText" />
+
+    <TextView
+        android:id="@+id/qGenreMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="58dp"
+        android:text="Genre: "
+        app:layout_constraintBottom_toTopOf="@+id/qRatingMsgText"
+        app:layout_constraintEnd_toStartOf="@+id/aGenreMsgText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aMovieNameText" />
+
+    <EditText
+        android:id="@+id/aCommentsText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="157dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qCommentsText" />
+
+    <EditText
+        android:id="@+id/aGenreMsgText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/aRatingBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/qGenreMsgText"
+        app:layout_constraintTop_toTopOf="@+id/aMovieNameText" />
+
+    <TextView
+        android:id="@+id/qRecommendMsgText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="Would you recommend this movie?"
+        app:layout_constraintBottom_toBottomOf="@+id/aRecommendText"
+        app:layout_constraintBottom_toTopOf="@+id/qThemeMovText"
+        app:layout_constraintEnd_toStartOf="@+id/aRecommendText"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/aThemeMovText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/qCommentsText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qThemeMovText" />
+
+    <TextView
+        android:id="@+id/qCommentsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="Do you have any additional comments"
+        app:layout_constraintBottom_toTopOf="@+id/aCommentsText"
+        app:layout_constraintStart_toStartOf="@+id/aCommentsText"
+        app:layout_constraintTop_toBottomOf="@+id/aThemeMovText" />
+
+    <TextView
+        android:id="@+id/aRecommendText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:text="yes/no"
+        app:layout_constraintBottom_toTopOf="@+id/qThemeMovText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aRatingBar"
+        app:layout_constraintVertical_bias="0.41" />
+
+    <EditText
+        android:id="@+id/aRatingBar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="94dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="94dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/qThemeMovText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/qRatingMsgText"
+        app:layout_constraintTop_toBottomOf="@+id/aMovieNameText" />
+
+    <TextView
+        android:id="@+id/p3MsgText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="61dp"
+        android:background="#FFD700"
+        android:text="Movie Review"
+        android:textAlignment="center"
+        android:textColor="#101010"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/qMovieNameText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

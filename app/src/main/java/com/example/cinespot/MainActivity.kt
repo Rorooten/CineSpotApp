@@ -70,3 +70,5 @@ class MainActivity : AppCompatActivity() {
         startActivity(movieReviewFormLinker)
     }
 }
+
+// https://docs.google.com/spreadsheets/d/1pO9ev_bAYYe_FE5rTwKuE5PJaXtogCosZ6GZ0P2TjL4/edit?gid=0#gid=0
